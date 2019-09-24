@@ -15,36 +15,50 @@
 // console.log(a);
 
 var produtos = [
-    {
-        nome: "Torta de maca",
-        preco: 7.5
-    },
-    {
-      nome: "Bolo",
-      preco: 4.0
-    },
-    {
-      nome: "Mousse",
-      preco: 5.25
-    },
-    {
-      nome: "Pudim de leite",
-      preço: 6.7
-    }
-  ];
-  
-//   var readline = require('readline-sync');
-//   var produtoEscolhido = parseInt(readline.question("Escolha um número de 0 a 3, onde 0: Torta de maçã, 1: Bolo, 2: Mousse, 3: Pudim de Leite."));
-//   var porcentagem = parseInt(readline.question(  "Escolha um número de 0 a 100, referente a porcentagem do desconto"));
-  var produtoEscolhido = parseInt(prompt('Escolha um número de 0 a 3, onde 0: Torta de maçã, 1: Bolo, 2: Mousse, 3: Pudim de Leite.'));
-  console.log(`produto escolhido: ${produtoEscolhido}, ${produtos[produtoEscolhido].nome}`);
-  var porcentagem = parseInt(prompt('Escolha um número de 0 a 100, referente a porcentagem do desconto'));
-  console.log(`porcentagem: ${porcentagem}`);
-  var valorDesconto = (((produtos[produtoEscolhido].preco)/100)*porcentagem).toFixed(2);
-  var precoComDesconto = ((produtos[produtoEscolhido].preco)-valorDesconto);
-  console.log(`preco: ${produtos[produtoEscolhido].preco}`);
-  console.log(`Valor desconto: ${valorDesconto}`);
-  
-  console.log(`O valor do produto ${produtos[produtoEscolhido].nome} com desconto de ${porcentagem}% é R$${precoComDesconto}`);
-  
+  {
+    nome: "Torta de maca",
+    preco: 7.5
+  },
+  {
+    nome: "Bolo",
+    preco: 4.0
+  },
+  {
+    nome: "Mousse",
+    preco: 5.25
+  },
+  {
+    nome: "Pudim de leite",
+    preco: 6.7
+  }
+];
 
+var readline = require("readline-sync");
+
+var produtoEscolhido = parseInt(
+  readline.question(
+    "Escolha um numero de 0 a 3, onde 0: Torta de maca, 1: Bolo, 2: Mousse, 3: Pudim de Leite: "
+  )
+);
+var porcentagem = parseInt(
+  readline.question(
+    "Escolha um numero de 0 a 100, referente a porcentagem do desconto: "
+  )
+);
+console.log(
+  `produto escolhido: ${produtoEscolhido}, ${produtos[produtoEscolhido].nome}`
+);
+console.log(`porcentagem: ${porcentagem}`);
+
+var valorDesconto = (
+  (produtos[produtoEscolhido].preco / 100) *
+  porcentagem
+).toFixed(2);
+
+var precoComDesconto = produtos[produtoEscolhido].preco - valorDesconto;
+console.log(`preco: ${produtos[produtoEscolhido].preco}`);
+console.log(`Valor desconto: ${valorDesconto}`);
+
+console.log(
+  `O valor do produto ${produtos[produtoEscolhido].nome} com desconto de ${porcentagem}% é R$${precoComDesconto}`
+);
