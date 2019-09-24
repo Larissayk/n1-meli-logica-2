@@ -1,23 +1,22 @@
 {
   "name": "n1-meli-logica-2",
   "version": "1.0.0",
-  "description": "semana 3 - lógica",
+  "description": "projeto pra semana 3 da turma meli",
   "main": "index.js",
-  "dependencies": {
-    "readline-sync": "^1.4.10"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Larissayk/n1-meli-logica-2.git"
+    "url": "git+https://github.com/reprograma/n1-meli-logica-2.git"
   },
-  "author": "Larissa Kido",
+  "author": "luma marigo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Larissayk/n1-meli-logica-2/issues"
+    "url": "https://github.com/reprograma/n1-meli-logica-2/issues"
   },
-  "homepage": "https://github.com/Larissayk/n1-meli-logica-2#readme"
+  "homepage": "https://github.com/reprograma/n1-meli-logica-2#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
