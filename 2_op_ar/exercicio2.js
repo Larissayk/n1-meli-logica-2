@@ -1,4 +1,3 @@
-
 //resposta aqui
 
 // - Crie uma variável que irá guardar o array com nome e valor dos produtos
@@ -63,4 +62,3 @@ console.log(`Valor desconto: ${valorDesconto}`);
 console.log(
   `O valor do produto ${produtos[produtoEscolhido].nome} com desconto de ${porcentagem}% é R$${precoComDesconto}`
 );
-
